@@ -1,0 +1,9 @@
+{ decls }
+namespace std {  }
+namespace JM {  }
+
+[ libSimEventV2.so ]
+# List of selected classes
+class JM::SimTrack
+class vector<JM::SimTrack>
+header SimTrack.h

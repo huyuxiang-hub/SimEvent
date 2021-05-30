@@ -1,0 +1,41 @@
+{ decls }
+namespace JM {  }
+
+[ libSimEventV2.so ]
+# List of selected classes
+class JM::SimHeader
+header SimHeader.h
+{ decls }
+namespace std {  }
+namespace JM {  }
+
+[ libSimEventV2.so ]
+# List of selected classes
+class JM::SimPMTHit
+class vector<JM::SimPMTHit>
+header SimPMTHit.h
+{ decls }
+namespace std {  }
+namespace JM {  }
+
+[ libSimEventV2.so ]
+# List of selected classes
+class JM::SimTrack
+class vector<JM::SimTrack>
+header SimTrack.h
+{ decls }
+namespace JM {  }
+
+[ libSimEventV2.so ]
+# List of selected classes
+class JM::SimEvent
+header SimEvent.h
+{ decls }
+namespace std {  }
+namespace JM {  }
+
+[ libSimEventV2.so ]
+# List of selected classes
+class JM::SimTTHit
+class vector<JM::SimTTHit>
+header SimTTHit.h
