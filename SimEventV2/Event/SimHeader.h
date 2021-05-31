@@ -24,9 +24,6 @@ namespace JM
             std::string m_evt_type; 
             double m_CDLPMTtimewindow;
             int m_CDLPMTtotalhits;
-            int m_CDSPMTtotalhits;
-            int m_CDNNVTtotalhits;
-            int m_CDHamamatsutotalhits;
         public:
             SimHeader();
             ~SimHeader();
@@ -68,35 +65,6 @@ namespace JM
             {
                 m_CDLPMTtotalhits = totalhits;
             }
-
-            int getCDSPMTtotalHits()  {
-                return m_CDSPMTtotalhits;
-            } 
-
-            void setCDSPMTtotalHits( int totalhits)
-            {
-                m_CDSPMTtotalhits = totalhits;
-            }
-
-            int getCDNNVTtotalHits()  {
-                return m_CDNNVTtotalhits;
-            }
-
-            void setCDNNVTtotalHits( int totalhits)
-            {
-                m_CDNNVTtotalhits = totalhits;
-            }
-            
-            int getCDHamamatsutotalHits()  {
-                return m_CDHamamatsutotalhits;
-            }
-
-            void setCDHamamatsutotalHits( int totalhits)
-            {
-                m_CDHamamatsutotalhits = totalhits;
-            }
-
-
         public:
             ClassDef(SimHeader,4)
 

@@ -35,6 +35,12 @@ namespace JM
         m_ntrks = 0;
         m_eventid = evtid;
         m_nbars = 0;
+  
+        m_nhits_lpmt = 0 ;
+        m_nhits_spmt = 0 ;
+        m_nhits_nnvt = 0 ;
+        m_nhits_hama = 0 ;
+
 
     }
 

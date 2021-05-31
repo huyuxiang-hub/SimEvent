@@ -30,6 +30,11 @@ namespace JM
             Int_t m_counter; // only for debug
 
             Int_t m_eventid;
+ 
+            Int_t m_nhits_lpmt;
+            Int_t m_nhits_spmt;
+            Int_t m_nhits_nnvt;
+            Int_t m_nhits_hama;
 
             // don't support the copy constructor
             SimEvent(const SimEvent& event);
@@ -59,6 +64,20 @@ namespace JM
             // == Event ID ==
             Int_t getEventID() { return m_eventid; }
             void setEventID(Int_t val) { m_eventid = val; }
+             
+            Int_t getLpmtHits() { return m_nhits_lpmt; }
+            void setLpmtHits(Int_t hits) { m_nhits_lpmt = hits ; }
+
+            Int_t getSpmtHits() { return m_nhits_spmt; }
+            void setSpmtHits(Int_t hits) { m_nhits_spmt = hits ; }
+
+            Int_t getNNVTHits() { return m_nhits_nnvt; }
+            void setNNVTHits(Int_t hits) { m_nhits_nnvt = hits ; }
+ 
+            Int_t getHamaHits() { return m_nhits_hama; }
+            void setHamaHits(Int_t hits) { m_nhits_hama = hits ; }
+
+
             ClassDef(SimEvent, 10)
 
     };
